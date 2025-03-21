@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Fund Dashboard</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .sidebar {
+            width: 280px;
+            height: 100vh;
+            position: fixed;
+            background-color: #5dc1f2;
+            color: white;
+            padding-top: 20px;
+        }
+
+        .sidebar h4 {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            color: white;
+            padding: 12px 20px;
+            display: block;
+            text-decoration: none;
+            font-size: 16px;
+  }
+
+        .sidebar a:hover {
+            background-color: #3a9ec1;
+            border-left: 5px solid white;
+        }
+
+        .content {
+            margin-left: 300px;
+            padding: 20px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+            border-radius: 10px;
+        }
+
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h4>Startup Fund</h4>
+                <a href="funding.html"><i class="fas fa-bullseye"></i> Funding Opportunities</a>
+        <a href="investor-profile.html"><i class="fas fa-user-tie"></i> Investor Profiles</a>
+        <a href="application.html"><i class="fas fa-folder"></i> Startup Applications</a>
+        <a href="funding.html"><i class="fas fa-chart-line"></i> Funding Tracker</a>
+        <a href="community.html"><i class="fas fa-users"></i> Community & Networking</a>
+        <a href="eduresource.html"><i class="fas fa-book-open"></i> Educational Resources</a>
+        <a href="adminpanel.html"><i class="fas fa-user-shield"></i> Admin Panel</a>
+        <a href="payment.html"><i class="fas fa-credit-card"></i> Payments & Subscriptions</a>
+        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+        <a href="userauth.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+
+    <div class="content">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <div class="ml-auto">
+                <i class="fas fa-bell mx-3"></i>
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </nav>
+
+        <h2 class="mt-3">Dashboard Overview</h2>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5>Total Applications</h5>
+                    <h3>1,250</h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5>Approved Funds</h5>
+                    <h3>$2.4M</h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5>Pending Reviews</h5>
+                    <h3>320</h3>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="mt-5">Recent Applications</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Startup Name</th>
+                    <th>Founder</th>
+                    <th>Funding Requested</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tech Innovators</td>
+                    <td>John Doe</td>
+                    <td>$500,000</td>
+                    <td><span class="badge badge-warning">Pending</span></td>
+                </tr>
+                <tr>
+                    <td>Health Solutions</td>
+                    <td>Jane Smith</td>
+                    <td>$750,000</td>
+                    <td><span class="badge badge-success">Approved</span></td>
+                </tr>
+                <tr>
+                    <td>AI Pioneers</td>
+                    <td>Mike Johnson</td>
+                    <td>$1.2M</td>
+                    <td><span class="badge badge-danger">Rejected</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
